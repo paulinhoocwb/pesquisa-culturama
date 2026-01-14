@@ -8,26 +8,42 @@
 <body>
     <header>
         <h1>Pesquisa Online</h1>
+
         <section>
+            <form action="" method="get">
 
+                      <!-- DADOS PESSOAIS -->
 
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" required>
 
+                <label for="userAge">Idade</label>
+                <input type="number" name="userAge" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data de Nascimento</label>
+                <input type="date" name="birthDate">
+                <br>
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail">
+                <br>
+                <label for="userNumberPhone">Telefone</label>
+                <input 
+                    type="tel" 
+                    name="userNumberPhone" 
+                    pattern="[0-9]{11}" 
+                    placeholder="Ex: 11987654321"
+                >
+                <br>
+                <input type="file" accept="img/*" name="userImage">
+                <label for="userImage">Upload de Foto</label>
+                <br>
+                </fieldset>
+                <button type="submit">Enviar</button>
 
-
-            
+            </form>
         </section>
-
-
-
-
-
-
-
     </header>
-
-
-
-
-
 </body>
 </html>
